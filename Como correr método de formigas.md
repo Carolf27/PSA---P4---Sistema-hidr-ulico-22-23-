@@ -1,1 +1,64 @@
-# Como correr método de formigas
+# MÉTODO DA COLÓNIA DAS FORMIGAS - COMO CORRER
+## PASTA 'Otimização PID'
+1. Abrir ficheiro matlab 'PID_Otim_formigas.'
+2. Correr a secção 'Parametros do modelo' para definir os parâmetros do modelo, criar o espaço de estados do mesmo e obter as funções de trasnferência da posição (G_xs) e da velocidade (G_vs)
+3. Na secção 'Parâmetros do controlador PID' descomentar um dos conjuntos de valor de uma otimização 
+( ex:
+% Otimização 1
+z1 = 1.0417;
+z2 = 8.0981;
+k = 0.69069; )
+4. Correr a secção 'Função de transferência - Controlador PID' para aplicar o controlador ao sistema e obter a resposta
+5. Correr a secção 'Ganhos Proporcional, Integral e Derivativo a ser implementado no controlador no simulink' para simular o modelo em smulink para diferentes trajetórias de entrada
+(este passo abre o ficheiro 'PID_base_simulink_formigas.slx' e simula-o com os dados definidos no ficheiro matlab)
+
+Para correr a otimização:
+1. Correr a secção 'Otimização' para inicializar os parâmetros da otimização e correr a simulação
+(este passo utiliza a função definida em 'cost_fun.m')
+Resposta
+
+## PASTA 'Otimização Controlador BH'
+1. Abrir ficheiro matlab 'BH_Otim_formigas.m'
+2. Correr a secção 'Parametros do modelo' para definir os parâmetros do modelo, criar o espaço de estados do mesmo e obter as funções de trasnferência da posição (G_xs) e da velocidade (G_vs)
+3. Na secção 'Parâmetros do controlador' descomentar um dos conjuntos de valor de uma otimização 
+( ex:
+% Original (tese)
+M0 = 480;
+a = 3.2;
+r0 =   0.62;
+gama = 170;
+k1 =11;
+k2 = 0.9; )
+4. Correr a secção 'Implementação do controlador de BH no sistema' para aplicar o controlador ao sistema e obter a resposta
+5. Correr a secção 'Simulação do modelo com o controlador PID para várias trajetórias de entrada' para simular o modelo em smulink para diferentes trajetórias de entrada
+(este passo abre o ficheiro 'BH_base_simulink_formigas.slx' e simula-o com os dados definidos no ficheiro matlab)
+
+Para correr a otimização:
+1. Correr a secção 'Otimização' para inicializar os parâmetros da otimização e correr a simulação
+(este passo utiliza a função definida em 'cost_fun_bh.m')
+Resposta
+
+## PASTA 'Parametrização do modelo da prensa'
+1. Abrir ficheiro matlab 'Otim_modelo.m'
+2. Correr a secção 'Carregamento dos dados do ensaio experimental na prensa' para carregar os dados do ensaio da prensa 
+(nota: nesta secção é feito o 'load' do ficheiro 'teste2v.mat' por isso é necessário tê-lo na mesma pasta para correr)
+3. Correr a secção 'Parametros do modelo' para definir os parâmetros do modelo
+4. Descomentar um conjunto de coeficientes da otimização da secção 'Coeficientes' e correr para definir os coeficientes
+(ex:
+% Original (tese)
+% Coeficientes caudal-pressão
+kc1=7e-13;
+kc2=1e-12;
+
+% Ganhos de caudal na válvula
+kq1=0.0027459;
+kq2=0.001091;)
+5. Correr a secção 'Estado de espaços' para criar o espaço de estados do modelo e obter as funções de trasnferência da posição (G_xs) e da velocidade (G_vs)
+6. Correr a secção 'Redução dos dados para o intervalo entre os 8 e 10 segundos ( 2 segundos )' para reduzir os dados dos ensaios para um intervalo de 2 segundos
+7. Correr a secção 'Comparação da resposta do modelo ao ensaio da prensa' para obter a resposta do modelo com os parâmetros otimizados e comparar os resultados da posição e da velocidade com as do ensaio
+
+Para correr a otimização dos parâmetros do modelo:
+1. Correr a secção 'Otimização' para inicializar os parâmetros da otimização e correr a simulação
+(este passo utiliza a função definida em 'cost_fun.m')
+Resposta
+
