@@ -1,4 +1,7 @@
 # MÉTODO DA COLÓNIA DAS FORMIGAS - COMO CORRER
+
+Antes de correr algum dos códigos em ficheiro matlab correr a primeira secção de 'clear all, close all, clc' para limpar todas as variáveis para que não haja erros
+
 ## PASTA 'Otimização PID'
 1. Abrir ficheiro matlab **'PID_Otim_formigas.'**
 2. Correr a secção **'Parametros do modelo'** para definir os parâmetros do modelo, criar o espaço de estados do mesmo e obter as funções de trasnferência da posição (G_xs) e da velocidade (G_vs)
