@@ -15,7 +15,13 @@
 Para correr a otimização:
 1. Correr a secção **'Otimização'** para inicializar os parâmetros da otimização e correr a simulação
 (este passo utiliza a função definida em 'cost_fun.m')
-Resposta
+2. O resultado da otimização são 3 valores: [z1 z2 k]
+
+![image](https://github.com/Carolf27/PSA---P4---Sistema-hidr-ulico-22-23-/assets/129117353/fa3062d3-9af5-43e2-95f0-60f71ef20a5a)
+
+(exemplo ilustrativo do resultado da otimização)
+
+4. Para simular o modelo com os valores resultantes da otimização é necessário substituir estes valores na secção **'Parâmetros do controlador PID'**
 
 ## PASTA 'Otimização Controlador BH'
 1. Abrir ficheiro matlab **'BH_Otim_formigas.m'**
@@ -34,7 +40,14 @@ Resposta
 Para correr a otimização:
 1. Correr a secção **'Otimização'** para inicializar os parâmetros da otimização e correr a simulação
 (este passo utiliza a função definida em 'cost_fun_bh.m')
-Resposta
+2. O resultado da otimização são 6 valores: [M0 a r0 gama k1 k2]
+
+![image](https://github.com/Carolf27/PSA---P4---Sistema-hidr-ulico-22-23-/assets/129117353/2fb77241-95a0-4ce7-adfb-38e4e212612c)
+
+(exemplo ilustrativo do resultado da otimização)
+
+4. Para simular o modelo com os valores resultantes da otimização é necessário substituir estes valores na secção **'Parâmetros do controlador'**
+
 
 ## PASTA 'Parametrização do modelo da prensa'
 1. Abrir ficheiro matlab **'Otim_modelo.m'**
@@ -53,5 +66,7 @@ Resposta
 Para correr a otimização dos parâmetros do modelo:
 1. Correr a secção 'Otimização' para inicializar os parâmetros da otimização e correr a simulação
 (este passo utiliza a função definida em 'cost_fun.m')
-Resposta
+2. O resultado da simulação são 4 valores: [kq1 kq2 kc1 kc2]
+
+
 
