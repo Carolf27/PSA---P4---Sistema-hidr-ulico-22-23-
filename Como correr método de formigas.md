@@ -3,13 +3,10 @@
 1. Abrir ficheiro matlab 'PID_Otim_formigas.'
 2. Correr a secção 'Parametros do modelo' para definir os parâmetros do modelo, criar o espaço de estados do mesmo e obter as funções de trasnferência da posição (G_xs) e da velocidade (G_vs)
 3. Na secção 'Parâmetros do controlador PID' descomentar um dos conjuntos de valor de uma otimização 
-( ex:
-% Otimização 1
-z1 = 1.0417;
-z2 = 8.0981;
-k = 0.69069; )
-![![image](https://github.com/Carolf27/PSA---P4---Sistema-hidr-ulico-22-23-/assets/129117353/a8efb6f7-3657-46d4-8acd-87b2dcde8d2b)
-]
+ex:
+
+![image](https://github.com/Carolf27/PSA---P4---Sistema-hidr-ulico-22-23-/assets/129117353/a8efb6f7-3657-46d4-8acd-87b2dcde8d2b)
+
 4. Correr a secção 'Função de transferência - Controlador PID' para aplicar o controlador ao sistema e obter a resposta
 5. Correr a secção 'Ganhos Proporcional, Integral e Derivativo a ser implementado no controlador no simulink' para simular o modelo em smulink para diferentes trajetórias de entrada
 (este passo abre o ficheiro 'PID_base_simulink_formigas.slx' e simula-o com os dados definidos no ficheiro matlab)
