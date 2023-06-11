@@ -2,7 +2,7 @@
 
 Antes de correr algum dos códigos em ficheiro matlab correr a primeira secção de 'clear all, close all, clc' para limpar todas as variáveis para que não haja erros
 
-## PASTA 'Otimização PID'
+## PASTA 'PID_base'
 1. Abrir ficheiro matlab **'PID_Otim_formigas.'**
 2. Correr a secção **'Parametros do modelo'** para definir os parâmetros do modelo, criar o espaço de estados do mesmo e obter as funções de trasnferência da posição (G_xs) e da velocidade (G_vs)
 3. Na secção **'Parâmetros do controlador PID'** descomentar um dos conjuntos de valor de uma otimização 
@@ -26,7 +26,7 @@ Para correr a otimização:
 
 4. Para simular o modelo com os valores resultantes da otimização é necessário substituir estes valores na secção **'Parâmetros do controlador PID'**
 
-## PASTA 'Otimização Controlador BH'
+## PASTA 'Controlador BH'
 1. Abrir ficheiro matlab **'BH_Otim_formigas.m'**
 2. Correr a secção **'Parametros do modelo'** para definir os parâmetros do modelo, criar o espaço de estados do mesmo e obter as funções de trasnferência da posição (G_xs) e da velocidade (G_vs)
 3. Na secção **'Parâmetros do controlador'** descomentar um dos conjuntos de valor de uma otimização 
@@ -78,7 +78,7 @@ Para correr a otimização dos parâmetros do modelo:
 
 4. Para simular o modelo com os valores resultantes da otimização é necessário substituir estes valores na secção **'Coeficientes'**
 
-## PASTA 'Otimização do controlador BH com parâmetros otimizados da prensa'
+## PASTA 'Controlador BH_modelo otimizado'
 1. Abrir ficheiro matlab **'BH_Otim_formigas_modelo_otimizado.m'**
 2. Correr a secção **'Parametros modelo'** para definir os parâmetros do modelo otimizado, criar o espaço de estados do mesmo e obter as funções de trasnferência da posição (G_xs) e da velocidade (G_vs)
 3. Descomentar um conjunto de valore das otimizações na secção **'Parâmetros do controlador'** e correr para definir os parâmetros do controlador
