@@ -3,7 +3,7 @@
 1. Abrir ficheiro matlab 'PID_Otim_formigas.'
 2. Correr a secção 'Parametros do modelo' para definir os parâmetros do modelo, criar o espaço de estados do mesmo e obter as funções de trasnferência da posição (G_xs) e da velocidade (G_vs)
 3. Na secção 'Parâmetros do controlador PID' descomentar um dos conjuntos de valor de uma otimização 
-ex:
+- ex:
 
 ![image](https://github.com/Carolf27/PSA---P4---Sistema-hidr-ulico-22-23-/assets/129117353/a8efb6f7-3657-46d4-8acd-87b2dcde8d2b)
 
